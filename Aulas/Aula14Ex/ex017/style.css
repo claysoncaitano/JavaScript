@@ -1,0 +1,20 @@
+body{
+    background: #faebd7;
+    font: normal 20pt times;
+    text-align: center;
+}
+h1{
+
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 450px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+    margin-bottom: 10px;
+}
+div#msg{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,44 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+}
+section#janela{
+    font: normal 15pt times;
+    margin: auto;
+    background: white;
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px black;
+    padding: 10px;
+}
+input#prim{
+    margin-top: 7pt;
+    text-align: center;
+    margin-bottom: 7pt;
+}
+input#segu{
+    margin-top: 7pt;
+    text-align: center;
+    margin-bottom: 7pt;
+}
+input#passo{
+    margin-top: 7pt;
+    text-align: center;
+    margin-bottom: 15pt;
+}
+input#but{
+    font: normal 15pt times;
+    margin-bottom: 10pt;
+}
+input#limp{
+    font: normal 15pt times;
+    margin-bottom: 10pt;
+}
+footer{
+    margin-top: 15pt;
+    text-align: center;
+    font: normal 15pt times;
+}

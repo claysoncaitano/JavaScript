@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contandor</title>
+    <link rel='stylesheet' href='estilo.css'>
+</head>
+<body>
+    <h1>Vamos contar...</h1>
+    <section id='janela'>
+        <div>Onde começa</div>
+        <input type="number" value=0 id="prim"></br>
+        <div>Onde termina</div>
+        <input type="number" value=0 id="segu"></br>
+        <div>Passo</div>
+        <input type="number" value=0 id="passo"></br>
+        <input type="button" value='Contar' id="but" onclick="contar()">
+        <input type="button" value='Limpar' id="limp" onclick="limpar()">
+        <div id="msg">Vejamos...</div>
+        <div id="cont"></div>
+    </section>
+    <footer>&copy;claysoncaitanodasilva</footer>
+<script src='script.js'></script>
+</body>
+</html>

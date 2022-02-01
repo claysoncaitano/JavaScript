@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contandor</title>
+    <link rel='stylesheet' href='estilo.css'>
+</head>
+<body>
+    <h1>Vamos contar...</h1>
+    <section id='janela'>
+        <div>Onde começa</div>
+        <input type="number" id="prim"></br>
+        <div>Onde termina</div>
+        <input type="number" id="segu"></br>
+        <div>Passo</div>
+        <input type="number" id="passo"></br>
+        <input type="button" value='Contar' id="but" onclick="contar()">
+        <input type="button" value='Limpar' id="limp" onclick="limpar()">
+        <div id="msg">Vejamos...</div>
+        <div id="cont"></div>
+    </section>
+    <footer>&copy;claysoncaitanodasilva</footer>
+<script>
+    function contar(){
+    var pri = Number(document.getElementById('prim').value)
+    var seg = Number(document.getElementById('segu').value)
+    var pas = Number(document.getElementById('passo').value)
+    var contador = document.getElementById('cont')
+    var mensagem = document.getElementById('msg')
+    if (pri==0 && seg==0){
+        window.alert('Escolha onde começa ou termina')
+    }else if (pas==0){
+        window.alert('Escolha um passo')
+    }else if (pri<seg && pas<0){
+        window.alert('O passo tem que ser positivo')
+    }else if (pri>seg && pas>0){
+        window.alert('O passo tem que ser negativo')
+    }else if (pri<seg){
+    for(pri;pri<=seg;pri=pri+pas){
+        contador.innerHTML+=(`${pri}, `)
+        mensagem.innerText=''
+    }
+}else if (pri>seg){
+    for(pri;pri>=seg;pri=pri+pas){
+        contador.innerHTML+=(`${pri}, `)
+        mensagem.innerText=''
+    }
+}
+}
+function limpar(){
+    var contador = document.getElementById('cont')
+    var mensagem = document.getElementById('msg')
+    contador.innerText=''
+    mensagem.innerText='Vejamos...'
+}
+</script>
+</body>
+</html>
